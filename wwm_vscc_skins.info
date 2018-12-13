@@ -1,0 +1,5 @@
+name = WWM VSCC Skins
+description =  Views Slideshow Custom Controls skins created by WWM
+dependencies[] = vscc
+package = Views
+core = 7.x

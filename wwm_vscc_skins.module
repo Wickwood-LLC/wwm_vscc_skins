@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Implements hook_vscc_skin_info().
+ */
+function wwm_vscc_skins_vscc_skin_info() {
+  return array(
+    'sand_icons' => array(
+      'name' => t('New icons'),
+    )
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function wwm_vscc_skins_theme($existing, $type, $theme, $path) {
+  return array(
+    'vscc_element_wwm_icons' => array(
+      'variables' => array('element' => NULL, 'vss_id' => NULL, 'view' => NULL, 'settings' => array(), 'location' => NULL, 'rows' => array()),
+    ),
+  );
+}
+
+/**
+ * Theme function pointing to images.
+ *
+ * Images may be kept anywhere. In this example they're in a
+ * subdirectory of the wwm_vscc_skins module.
+ * 
+ * Icons were created by Dave Gandy from Flaticon.com: https://www.flaticon.com/packs/font-awesome
+ */
+function lw_omega_vscc_element_wwm_icons($vars) {
+  $image_vars = array(
+     // 'path' => drupal_get_path('theme', 'lw_omega') . '/images/vscc/wwm_' . $vars['element'] . '.svg',
+    'path' => drupal_get_path('module', 'wwm_vscc_skins') . '/images/vscc/wwm_' . $vars['element'] . '.svg',
+    'alt' => t($vars['element']),
+    'title' => t($vars['element']),
+  );
+  return theme('image', $image_vars);
+}
