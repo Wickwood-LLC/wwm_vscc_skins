@@ -5,8 +5,8 @@
  */
 function wwm_vscc_skins_vscc_skin_info() {
   return array(
-    'sand_icons' => array(
-      'name' => t('New icons'),
+    'wwm_icons' => array(
+      'name' => t('WWM icons'),
     )
   );
 }
