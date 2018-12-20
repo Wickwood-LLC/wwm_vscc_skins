@@ -1,5 +1,5 @@
 name = WWM VSCC Skins
-description =  Views Slideshow Custom Controls skins created by WWM
+description =  Views Slideshow Custom Controls skins created by WWM. Copy the "theme_vscc_element_wwm_icons" function from the module file to your theme's template.php file, replacing "theme_vscc_element_wwm_icons" with "[THEMENAME]_vscc_element_wwm_icons"
 dependencies[] = vscc
 package = Views
 core = 7.x
