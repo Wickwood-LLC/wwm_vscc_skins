@@ -33,11 +33,11 @@ function wwm_vscc_skins_theme($existing, $type, $theme, $path) {
  * Copy the function below to your theme's template.php file, replacing "theme_vscc_element_wwm_icons" with "[THEMENAME]_vscc_element_wwm_icons"
  */
 
-// function theme_vscc_element_wwm_icons($vars) {
-//   $image_vars = array(
-//     'path' => drupal_get_path('module', 'wwm_vscc_skins') . '/images/vscc/wwm_' . $vars['element'] . '.svg',
-//     'alt' => t($vars['element']),
-//     'title' => t($vars['element']),
-//   );
-//   return theme('image', $image_vars);
-// }
+function theme_vscc_element_wwm_icons($vars) {
+  $image_vars = array(
+    'path' => drupal_get_path('module', 'wwm_vscc_skins') . '/images/vscc/wwm_' . $vars['element'] . '.svg',
+    'alt' => t($vars['element']),
+    'title' => t($vars['element']),
+  );
+  return theme('image', $image_vars);
+}
